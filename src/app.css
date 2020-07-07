@@ -1,0 +1,155 @@
+/* Header */
+.header {
+  --background: #4263ec;
+  --color: white;
+  display: flex;
+  align-items: center;
+  height: 5em;
+}
+
+.logo {
+  margin-left: 0.5em;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+ion-toggle {
+  --background: #b2becd;
+  --background-checked: #000;
+  --handle-background: white;
+  --handle-background-checked: white;
+  width: 60px;
+}
+
+.dark-btn {
+  margin: 0 0.5em;
+}
+
+@media only screen and (max-width: 480px) {
+  .title {
+    padding: 0 0 0 2em;
+    text-align: left;
+  }
+}
+
+/* Todo Card */
+.dashboard {
+  background: #4263ec;
+  height: 150px;
+  width: 100%;
+}
+
+.dashboard_title {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 700;
+}
+
+.profile {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card-row {
+  height: 100%;
+}
+
+.card-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: inherit;
+}
+
+.no_todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  color: #4d4d4d;
+}
+
+.plus {
+  font-size: 5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .no_todo h1 {
+    font-size: 18px;
+  }
+
+  .dashboard_title {
+    padding: 0;
+  }
+
+  .card-col {
+    justify-content: flex-end;
+  }
+}
+/* List */
+.container {
+  margin: 0 auto;
+}
+
+.list-container {
+  width: 70%;
+}
+
+@media only screen and (max-width: 480px) {
+  .list-container {
+    width: 100%;
+  }
+}
+
+/* Todo List */
+.image {
+  max-width: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.checkbox {
+  --border-radius: 50%;
+  --size: 1.5rem;
+  --border-color: #4263ec;
+}
+
+.list {
+  overflow: scroll;
+  height: 20rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+.line-strike {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.todo_list {
+  --min-height: 3rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+  border-left: 7px solid #4263ec;
+}
+
+@media only screen and (max-width: 480px) {
+  .list {
+    height: 20rem;
+  }
+}
+
+/* Add Todo */
+.todo_input {
+  font-size: 1.5rem;
+}
